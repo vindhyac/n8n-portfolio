@@ -1,0 +1,103 @@
+USER INTERVIEW TRANSCRIPT (FICTIONAL SAMPLE DATA)
+Product: Flowpad (fictional workflow automation tool)
+Participant: Priya Nair, Operations Lead at a 40-person e-commerce company (fictional)
+Interviewer: Vin (Product Manager)
+Date: 2026-10-20
+Length: ~20 minutes
+Recording: interview-01-priya.mp4
+
+---
+
+[00:00] Vin: Thanks for making time, Priya. Before we start, is it okay if I record this? It's only used internally by the product team.
+
+[00:06] Priya: Yes, that's fine.
+
+[00:08] Vin: Great. To start, can you tell me a bit about your role and what a normal week looks like?
+
+[00:14] Priya: Sure. I run operations, so anything that isn't marketing or engineering ends up with me. Order issues, supplier updates, the weekly numbers for the founders. A lot of my week is moving information from one place to another. Shopify to a spreadsheet, a spreadsheet to Slack, Slack to someone's inbox.
+
+[00:35] Vin: When did you start using Flowpad for that?
+
+[00:38] Priya: About eight months ago. Our only engineer was spending Fridays writing little scripts for me, and he hated it. So I tried Flowpad so I could do it myself.
+
+[00:50] Vin: Can you walk me through the last workflow you built?
+
+[00:54] Priya: Last week, actually. When an order is flagged as fraud risk, it posts to our #orders channel with the customer's history, and someone has to click approve or cancel in Slack. Before, people just forgot to check the fraud tab.
+
+[01:10] Vin: How long did that take to build?
+
+[01:13] Priya: Honestly, two evenings. The first evening was fine, I got the trigger and the Slack message working in maybe an hour. The second evening was all about the approve button. I couldn't work out why the workflow just stopped and waited forever.
+
+[01:30] Vin: What did you do to figure it out?
+
+[01:33] Priya: I asked Claude. I have Flowpad connected to Claude now, so I pasted the error and it told me the wait step needed the production URL, not the test one. Which, fine, but there was nothing in Flowpad itself that told me that.
+
+[01:50] Vin: You mentioned you connected Flowpad to Claude. Tell me more about how you use them together.
+
+[01:56] Priya: It's become my main way of building, to be honest. I describe what I want in Claude, it builds the workflow in Flowpad, and then I open it and check the boxes. I like that I can see the steps. When Claude just does something by itself in a chat, I have no idea what it actually did. In Flowpad I can click each step and see what went in and out.
+
+[02:20] Vin: What's the hardest part of that setup today?
+
+[02:24] Priya: When it breaks at 2am. Claude built it, I approved it, it ran fine for three weeks, and then one night the Shopify token expired and nothing happened. No error, nothing in Slack. I only found out because a customer emailed.
+
+[02:42] Vin: How did that feel?
+
+[02:44] Priya: Embarrassing, mostly. The founders trust me to keep this stuff running. If I can't tell when it's broken, I can't really say it's automated, can I?
+
+[02:55] Vin: What would you have wanted to happen instead?
+
+[02:58] Priya: Just tell me. Send me a Slack message saying "this workflow failed at this step." I found out later you can set up an error workflow, but I had no idea it existed. It should be on by default, or at least suggested when you turn a workflow on.
+
+[03:15] Vin: That's really useful. Let's switch to the weekly numbers you mentioned. How do those get made?
+
+[03:21] Priya: That's the one I'm least proud of. Flowpad stores everything in a data table, and every Monday I need the last week's rows in a spreadsheet for the founders. There's no proper export. I either copy-paste from the table view, which breaks after about 500 rows, or I ask Claude to write a step that dumps it to Google Sheets.
+
+[03:45] Vin: How often do you hit that 500-row problem?
+
+[03:48] Priya: Every month-end. In a normal week it's maybe 300 orders, but month-end is 2,000 or more. That's when I need the export most and it's when it works worst.
+
+[04:00] Vin: What do you do then?
+
+[04:02] Priya: I split it into date ranges and copy four times. It takes 40 minutes and I always worry I missed a day.
+
+[04:12] Vin: If export worked the way you wanted, what would it look like?
+
+[04:16] Priya: One button. Pick the date range, get a CSV. And ideally I could schedule it, so every Monday at 8 it lands in the founders' inbox and I don't touch it.
+
+[04:28] Vin: Is the CSV going anywhere besides the founders?
+
+[04:31] Priya: Our accountant. She only takes CSV, she won't log into anything.
+
+[04:36] Vin: Okay. Is there anything about data tables you'd be nervous changing?
+
+[04:41] Priya: Don't make me re-learn them. They're simple, and that's the point. I don't need Excel inside Flowpad. I need my data to get out.
+
+[04:50] Vin: Let's talk about sharing with your team. Does anyone else build workflows?
+
+[04:55] Priya: Two people now. That's created its own mess. Last month we had three different "post new orders to Slack" workflows, because nobody checked what already existed.
+
+[05:06] Vin: How did you notice?
+
+[05:08] Priya: #orders got every message three times. [laughs]
+
+[05:12] Vin: What did you do about it?
+
+[05:14] Priya: I made a folder called "LIVE - do not touch" and moved the real ones there. It's very low-tech. It would help a lot if Flowpad or Claude told you "you already have one that does this" before you built another.
+
+[05:30] Vin: That's a clear pattern. Last area: costs. How do you think about the AI steps in your workflows?
+
+[05:37] Priya: I didn't, at first. Then our bill tripled in one month. It turned out the fraud summary step was using the most expensive model for a two-sentence summary. I switched it to a smaller model and the cost dropped by 80% and nobody noticed a difference.
+
+[05:55] Vin: How did you find out which step was the expensive one?
+
+[05:58] Priya: Guessing. There's no view that says "this step costs you this much." I'd love that, per workflow, per step.
+
+[06:08] Vin: We're nearly out of time. If you could change one thing in Flowpad tomorrow, what would it be?
+
+[06:14] Priya: Tell me when things break. Everything else I can work around, but silent failures make me look bad in front of people who trust me.
+
+[06:24] Vin: That's a great note to end on. Thank you, Priya. We'll send your gift card today.
+
+[06:29] Priya: Thanks, this was fun.
+
+--- END OF TRANSCRIPT ---

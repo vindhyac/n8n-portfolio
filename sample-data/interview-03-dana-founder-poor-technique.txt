@@ -1,0 +1,68 @@
+USER INTERVIEW TRANSCRIPT (FICTIONAL SAMPLE DATA)
+Product: Flowpad (fictional workflow automation tool)
+Participant: Dana Okafor, Founder of a 5-person marketing agency (fictional)
+Interviewer: Vin (Product Manager)
+Date: 2026-10-24
+Length: ~20 minutes
+Recording: interview-03-dana.mp4
+Note for the demo: this interview is deliberately poor (leading questions, interviewer talks too much, no follow-ups) so the "interview coach" agent has something to critique.
+
+---
+
+[00:00] Vin: Hi Dana! Thanks so much for doing this. So, we're working on some really exciting stuff around exporting data, and I think you're going to love it. Is it okay if I record?
+
+[00:10] Dana: Sure.
+
+[00:12] Vin: Great. So you use Flowpad for your agency, right? You probably love how easy it is to connect all your tools?
+
+[00:18] Dana: Yeah, it's pretty good.
+
+[00:20] Vin: Awesome. So we've been hearing from a lot of customers that exporting data is really painful. That's been your experience too, right?
+
+[00:28] Dana: I guess, sometimes. I don't export that often.
+
+[00:32] Vin: Right, but when you do, it's frustrating. So we're thinking of adding a big export button where you pick a date range and get a CSV, and you could even schedule it to email someone every week. You'd use that, wouldn't you?
+
+[00:47] Dana: Probably, yeah. If it was there.
+
+[00:50] Vin: Perfect. And would you pay more for that? Like if it was part of a higher plan?
+
+[00:56] Dana: Hmm. Depends how much. We're pretty tight on budget.
+
+[01:00] Vin: Totally, totally. But it would save you so much time, so it would be worth it, right?
+
+[01:05] Dana: Maybe.
+
+[01:07] Vin: Cool. So what about errors? I bet it's really annoying when workflows fail and you don't find out.
+
+[01:13] Dana: Actually, my bigger problem is that I don't know which workflows my team built. I have one person who builds a lot and I can't tell what's running for which client.
+
+[01:23] Vin: Right, right. Yeah, so error alerts would really help with that, because you'd get a message when something fails. We're thinking Slack or email. Which would you prefer?
+
+[01:32] Dana: Slack, I guess.
+
+[01:34] Vin: Great, that's what most people say. Okay, and what about the AI features? Do you use Claude with Flowpad?
+
+[01:41] Dana: I tried it once.
+
+[01:43] Vin: It's amazing, right? It basically builds the whole workflow for you. Most of our power users use it every day now.
+
+[01:50] Dana: It built something, but I didn't understand what it built, so I deleted it. My client contracts are strict about where their data goes, and I couldn't tell which tools it had connected.
+
+[02:02] Vin: Oh, it's really secure, don't worry about that. You can always open the workflow and see each step. So you'd probably use it more now that you know that?
+
+[02:10] Dana: Maybe. I'd have to check with our clients.
+
+[02:13] Vin: Makes sense. Okay, last question: on a scale of 1 to 10, how likely are you to recommend Flowpad?
+
+[02:19] Dana: Seven?
+
+[02:21] Vin: Great, thanks! That's really helpful. So, to sum up, you'd want the export button, Slack error alerts, and you'd use Claude more. Does that sound right?
+
+[02:30] Dana: I suppose so.
+
+[02:32] Vin: Awesome. Thanks Dana, we'll send your gift card shortly!
+
+[02:36] Dana: Thanks.
+
+--- END OF TRANSCRIPT ---

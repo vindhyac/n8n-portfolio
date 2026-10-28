@@ -1,0 +1,95 @@
+USER INTERVIEW TRANSCRIPT (FICTIONAL SAMPLE DATA)
+Product: Flowpad (fictional workflow automation tool)
+Participant: Marcus Webb, Senior Product Manager at a 300-person B2B SaaS company (fictional)
+Interviewer: Vin (Product Manager)
+Date: 2026-10-22
+Length: ~20 minutes
+Recording: interview-02-marcus.mp4
+
+---
+
+[00:00] Vin: Hi Marcus, thanks for joining. Is it okay if I record this for our internal research?
+
+[00:05] Marcus: Of course.
+
+[00:07] Vin: Could you start by telling me how your team uses Flowpad today?
+
+[00:12] Marcus: We're six PMs and a couple of designers. We started with personal stuff, like meeting notes going into Notion. Now the most important one is our release process. When a project closes, Flowpad pulls the merged pull requests, drafts the release notes and posts them for the sales team.
+
+[00:32] Vin: How did the release workflow come about?
+
+[00:35] Marcus: Pain, honestly. Every PM wrote release notes differently. Sales kept asking "what does this mean for customers?" because half of us wrote them like commit messages. So we built one workflow everyone triggers, and it always produces the same format.
+
+[00:52] Vin: What changed after that?
+
+[00:55] Marcus: Sales stopped asking us questions in DMs, which was the real goal. And the notes go out the same day as the release now. Before, it could be a week later.
+
+[01:06] Vin: Who built it?
+
+[01:08] Marcus: I did, with Claude. I described the format we wanted, connected it to our GitHub and our project tracker, and iterated on the prompt for a few days.
+
+[01:18] Vin: What was the hardest part?
+
+[01:21] Marcus: Getting the AI step to be consistent. Some days the notes were great, some days it invented features. One release note said we'd added a dark mode we definitely hadn't built.
+
+[01:34] Vin: How did you deal with that?
+
+[01:37] Marcus: Two things. I added a human approval step in Slack, so a PM checks it before it goes to sales. And I started keeping a sheet of past releases with what the notes should have said, so I could test prompt changes against them. A poor man's eval, basically.
+
+[01:55] Vin: Tell me more about that sheet.
+
+[01:58] Marcus: It's about 20 old releases. When I change the prompt, I run the workflow on all 20 and read the results. It takes me an hour each time, which is why I don't do it as often as I should.
+
+[02:10] Vin: What would make that faster?
+
+[02:13] Marcus: If Flowpad scored them for me. Compare each new output with the "good" version and give me a number. I've seen that some tools have evaluations built in, but I haven't figured out how to set them up here.
+
+[02:27] Vin: Have you tried?
+
+[02:29] Marcus: Once. I got lost in the setup and went back to my sheet.
+
+[02:34] Vin: What happened that made you go back?
+
+[02:37] Marcus: I didn't understand where the "expected answer" was supposed to live. The docs assumed I knew what a dataset was in their sense. I'm a PM, I know what a spreadsheet is.
+
+[02:48] Vin: That's helpful. You mentioned the team of six PMs. How do the others use the workflows you built?
+
+[02:54] Marcus: That's the best part, really. They don't need to know how it works. They type a slash command in Slack, or mark the project done, and it runs. Before, if I was on holiday, nobody knew how my Claude prompts worked. Now the process lives in one shared place, not in my laptop.
+
+[03:12] Vin: Has that caused any problems?
+
+[03:15] Marcus: Ownership. When something breaks, everyone pings me because my name is on it. I'd like to say "this workflow is owned by the PM team, here's who's on call this week."
+
+[03:26] Vin: What do you do now?
+
+[03:28] Marcus: There's a pinned message in our channel. [laughs] It's not great.
+
+[03:33] Vin: Let's talk about Notion. You said meeting notes go there. What else?
+
+[03:38] Marcus: PRDs. We keep each one in Notion, and I've been trying to get a decision log on every PRD that updates itself from Slack. Engineering decisions happen in Slack threads and never make it back to the doc.
+
+[03:52] Vin: How far did you get?
+
+[03:54] Marcus: It reads the channel every morning and finds decisions, which works surprisingly well. The part I'm stuck on is matching a decision to the right PRD. When two projects are discussed in the same channel, it sometimes adds a decision to the wrong one.
+
+[04:10] Vin: How often does that happen?
+
+[04:12] Marcus: Maybe one in ten. Enough that people stopped trusting the log.
+
+[04:17] Vin: What would help you trust it again?
+
+[04:20] Marcus: If it showed me where each decision came from, with a link to the Slack thread, I could check it in two seconds. Right now it's just a bullet point with no source.
+
+[04:31] Vin: Last topic. If Flowpad disappeared tomorrow, what would you miss most?
+
+[04:36] Marcus: That the team has one way of doing things. Claude on its own is great for me personally. Flowpad is what makes it work for six people.
+
+[04:46] Vin: And what would you change first?
+
+[04:49] Marcus: Make evaluations something a PM can set up in ten minutes. I know I should be testing my AI steps. Make it easy enough that I actually do it.
+
+[04:59] Vin: Thanks, Marcus. That's really clear. We'll send over the gift card today.
+
+[05:03] Marcus: Happy to help.
+
+--- END OF TRANSCRIPT ---
